@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Online Denda",
-    "currentPage": "index.html",
+    "currentPage": "saioak-bonuak.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -5993,7 +5993,7 @@
         }
       ]
     },
-    "page6.html": {
+    "saioak-bonuak.html": {
       "settings": {
         "title": "Saioak-Bonoak",
         "meta_descr": "",
