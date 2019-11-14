@@ -61,9 +61,7 @@
     "google-analytics": "UA-26459329-1",
     "witsec-language": "eu",
     "witsec-form-subject": "Gaia | Asunto",
-    "sitemapSwitcher": "on",
-    "publishType": "local",
-    "publishPath": "file:///C:/Users/Usuario/Desktop/WEB%20BERRIA/Denda"
+    "sitemapSwitcher": "on"
   },
   "pages": {
     "index.html": {
