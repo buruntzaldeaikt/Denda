@@ -351,7 +351,7 @@ UA-26459329-1
 <div>bañador masculino</div></h4>
                         <p class="mbr-text mbr-fonts-style display-7">Lehiaketetan erabiltzeko taldeko bainujantzi ofiziala. Bainujantziak luzatuta eta estu egon behar du.
 <br>
-<br>Bañador oficial del club para utilizar en competición. El bañador a de quedar estirado y ajustado.</p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<br>Bañador oficial del club para utilizar en competición. El bañador a de quedar estirado y ajustado.<br><br><a href="javascript:OpenModal('Turbo-gizonezkoak-masculino')" class="text-primary">Neurrien Gida - Guía de Tallas</a><br><br></p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="5Z44DQFKX7FA8">
 <table>
@@ -427,6 +427,59 @@ UA-26459329-1
 	
 	
 	<div><div class="modal fade" id="Turbo-emakumezkoak-femenino" tabindex="-1" role="dialog" aria-labelledby="Turbo-emakumezkoak-femeninoLabel" aria-hidden="true">  <div class="modal-dialog modal-lg modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title" id="Turbo-emakumezkoak-femeninoLabel">Turbo emakumezkoen neurriak - Medidas Turbo femeninas</h5>  <a href="#" class="no-anim close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body" id="Turbo-emakumezkoak-femenino_body"><img src="https://1.bp.blogspot.com/-WBDDGO5vpRg/X7zwwEF7NyI/AAAAAAAA1b8/h2MQU0L22qoeOPZXXjxkZeoCWXgaESVgwCLcBGAsYHQ/s16000/WhatsApp%2BImage%2B2019-11-18%2Bat%2B12.00.34%2B%25281%2529.jpeg" width="700" height="300"></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-dismiss="modal">Itxi - Cerrar</a></div></div>    </div>  </div></div><script>document.addEventListener("DOMContentLoaded", function() {  $("#Turbo-emakumezkoak-femenino").on("hidden.bs.modal", function () {    var html = $( "#Turbo-emakumezkoak-femenino_body" ).html();    $( "#Turbo-emakumezkoak-femenino_body" ).empty();    $( "#Turbo-emakumezkoak-femenino_body" ).append(html);  })});</script></div>
+
+	<script>
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if ($('#' + modalName).length)
+				$('#' + modalName).modal('show');
+			else
+				alert("Sorry, but there is no modal for " + modalName);
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
+</section>
+
+<section class="mbr-section" id="witsec-modal-window-block-6h" data-rv-view="1166">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="Turbo-gizonezkoak-masculino" tabindex="-1" role="dialog" aria-labelledby="Turbo-gizonezkoak-masculinoLabel" aria-hidden="true">  <div class="modal-dialog modal-lg modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title" id="Turbo-gizonezkoak-masculinoLabel">Turbo neurriak gizonezkoak - Medidas Turbo masculinas</h5>  <a href="#" class="no-anim close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body" id="Turbo-gizonezkoak-masculino_body"><img src="https://1.bp.blogspot.com/-siHZ4tY0bIU/X7zwwG2MFVI/AAAAAAAA1cA/bEhvW_nBDZgCyK8BRFmVPbWkJadv-UhggCLcBGAsYHQ/s16000/WhatsApp%2BImage%2B2019-11-18%2Bat%2B12.00.34.jpeg" width="700" height="300"></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-dismiss="modal">Itxi - Cerrar</a></div></div>    </div>  </div></div><script>document.addEventListener("DOMContentLoaded", function() {  $("#Turbo-gizonezkoak-masculino").on("hidden.bs.modal", function () {    var html = $( "#Turbo-gizonezkoak-masculino_body" ).html();    $( "#Turbo-gizonezkoak-masculino_body" ).empty();    $( "#Turbo-gizonezkoak-masculino_body" ).append(html);  })});</script></div>
 
 	<script>
 	if (typeof OpenModal === 'undefined') {
