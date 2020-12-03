@@ -47,7 +47,7 @@
     "screenshot": "screenshot.png",
     "favicon": false,
     "noImageResize": "",
-    "siteUrl": "https://www.denda.buruntzaldeaikt.eus/sitemap.xml",
+    "siteUrl": "https://denda.buruntzaldeaikt.eus/sitemap.xml",
     "sitemapSwitcherAuto": "on",
     "cookiesAlert": {
       "colorText": "#424a4d",
@@ -57,7 +57,7 @@
       "opacity": "99",
       "text": "Webgune honek cookiak erabiltzen ditu, nabigazio esperientzia hobea eskaintzeko asmoz. Irakurri gure <a href='https://www.denda.buruntzaldeaikt.eus/Lege-Oharra.html'>Lege Oharra, Baldintza Orokorrak eta Pribatutasun Politika</a>.\n\nÉsta web utiliza cookies para mejorar la experiencia de uso. Lea nuestro  <a href='https://www.denda.buruntzaldeaikt.eus/Nota-Legal.html'>Aviso legal, Condiciones de Uso y Política de Privacidad</a>."
     },
-    "google-analytics": "UA-26459329-1",
+    "google-analytics": "",
     "witsec-language": "eu",
     "witsec-form-subject": "Gaia | Asunto",
     "sitemapSwitcher": "on",
