@@ -42,7 +42,7 @@
         "url": "https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 236,
+    "uniqCompNum": 237,
     "versionPublish": "5.2.0",
     "screenshot": "screenshot.png",
     "favicon": false,
@@ -539,6 +539,39 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "modalName": "gabonak",
+            "modalSize": "large",
+            "modalHeader": true,
+            "modalTitle": "Eguberri eta Urte Berri on!! -- ¡Feliz Navidad y próspero año nuevo!",
+            "modalBody": "<img src=https://1.bp.blogspot.com/-_s1s4owdsc4/X-MTLvERbyI/AAAAAAAA2Ec/TauxM_G1J8A8GErYR3PtkHVwT3fQaPWyACLcBGAsYHQ/s16000/Urte%2Bberria.png width=\"750\" height=\"400\">",
+            "modalBodyHTML": true,
+            "modalFooter": true,
+            "modalCloseBtn": true,
+            "modalCloseText": "Itxi -- Cerrar",
+            "modalLink": false,
+            "modalLinkUrl": "https://mobirise.com/",
+            "modalLinkText": "Visit Mobirise",
+            "modalLinkNewWindow": true,
+            "modalVerticalCenter": true,
+            "modalFade": true,
+            "modalAutoOpen": true,
+            "modalAutoOpenOnce": true,
+            "modalAutoOpenGDPR": false,
+            "modalAutoOpenDelay": "3"
+          },
+          "modalTest": "<div class=\"mbr-section-btn\">\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#gabonak\">Preview gabonak</a>\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#gabonak-howtouse\">How to use gabonak</a>\n</div>\n<div class=\"modal fade\" id=\"gabonak-howtouse\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"gabonak-howtouseLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\" style=\"height:auto\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\" id=\"gabonak-howtouseLabel\">How to use?</h5>\n        <a href=\"\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a>\n      </div>\n      <div class=\"modal-body\">\n        Using your new modal is very easy. Simply create a new link, then click the \"...\" tab and enter the following as custom URL:<br /><br />\n        <code>javascript:OpenModal('gabonak')</code>\n      </div>\n      <div class=\"modal-footer\">\n        <div class=\"mbr-section-btn\"><a href=\"#\" class=\"btn btn-secondary display-4\" data-dismiss=\"modal\">Close</a></div>\n      </div>\n    </div>\n  </div>\n</div>",
+          "modalBody": "<img src=https://1.bp.blogspot.com/-_s1s4owdsc4/X-MTLvERbyI/AAAAAAAA2Ec/TauxM_G1J8A8GErYR3PtkHVwT3fQaPWyACLcBGAsYHQ/s16000/Urte%2Bberria.png width=\"750\" height=\"400\">",
+          "alias": "witsec-modal-window",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "witsec-modal-window-block",
+          "_sourceTheme": "mobirise4",
+          "_anchor": "witsec-modal-window-block-6k",
+          "modalWindow": "<div class=\"modal fade\" id=\"gabonak\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"gabonakLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog modal-lg modal-dialog-centered\" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"gabonakLabel\">Eguberri eta Urte Berri on!! -- ¡Feliz Navidad y próspero año nuevo!</h5>  <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"gabonak_body\"><img src=https://1.bp.blogspot.com/-_s1s4owdsc4/X-MTLvERbyI/AAAAAAAA2Ec/TauxM_G1J8A8GErYR3PtkHVwT3fQaPWyACLcBGAsYHQ/s16000/Urte%2Bberria.png width=\"750\" height=\"400\"></div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-dismiss=\"modal\">Itxi -- Cerrar</a></div></div>    </div>  </div></div><script>document.addEventListener(\"DOMContentLoaded\", function() {  $(\"#gabonak\").on(\"hidden.bs.modal\", function () {    var html = $( \"#gabonak_body\" ).html();    $( \"#gabonak_body\" ).empty();    $( \"#gabonak_body\" ).append(html);  })});</script>"
         },
         {
           "alias": false,
