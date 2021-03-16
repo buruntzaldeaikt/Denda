@@ -56,8 +56,8 @@
       "underlineLink": true,
       "opacity": "99",
       "text": "Webgune honek cookiak erabiltzen ditu, nabigazio esperientzia hobea eskaintzeko asmoz. Irakurri gure <a href='https://www.denda.buruntzaldeaikt.eus/Lege-Oharra.html'>Lege Oharra, Baldintza Orokorrak eta Pribatutasun Politika</a>.\n\nÉsta web utiliza cookies para mejorar la experiencia de uso. Lea nuestro  <a href='https://www.denda.buruntzaldeaikt.eus/Nota-Legal.html'>Aviso legal, Condiciones de Uso y Política de Privacidad</a>.",
-      "customDialogSelector": true,
-      "textButton": "ADOS - DE ACUERDO",
+      "customDialogSelector": false,
+      "textButton": "Agree",
       "colorButton": "undefined",
       "opacityOverlay": "80"
     },
@@ -74,8 +74,7 @@
     "witsec-mailform": false,
     "robotsText": "User-agent: *\nDisallow: /cgi-bin\n\n",
     "gdpr": false,
-    "global_header_custom": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-VFN03ZPQQC\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-VFN03ZPQQC');\n</script>\n",
-    "mbrsiteDomain": "nxuqzjs7n3"
+    "global_header_custom": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-VFN03ZPQQC\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-VFN03ZPQQC');\n</script>\n"
   },
   "pages": {
     "index.html": {
