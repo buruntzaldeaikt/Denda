@@ -80,6 +80,8 @@
     "robotsText": "User-agent: *\nDisallow: /cgi-bin\n\n",
     "gdpr": false,
     "global_header_custom": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-VFN03ZPQQC\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-VFN03ZPQQC');\n</script>\n",
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@",
     "mbrsiteDomain": "nxuqzjs7n3"
   },
   "pages": {
