@@ -2,7 +2,7 @@ body {
   font-family: Rubik;
 }
 .display-1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 4.25rem;
   font-display: swap;
 }
@@ -10,7 +10,7 @@ body {
   font-size: 6.8rem;
 }
 .display-2 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 3rem;
   font-display: swap;
 }
@@ -18,7 +18,7 @@ body {
   font-size: 4.8rem;
 }
 .display-4 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 1rem;
   font-display: swap;
 }
@@ -26,7 +26,7 @@ body {
   font-size: 1.6rem;
 }
 .display-5 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 1.5rem;
   font-display: swap;
 }
@@ -34,7 +34,7 @@ body {
   font-size: 2.4rem;
 }
 .display-7 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 1rem;
   font-display: swap;
 }
@@ -523,7 +523,7 @@ a:hover {
 }
 /* Scroll to top button*/
 .form-control {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 1rem;
   font-display: swap;
 }
@@ -1021,24 +1021,6 @@ section.lazy-placeholder:after {
 .cid-rrbEC2uvxE H1 {
   color: #787324;
 }
-.cid-rsWkzdBXaz {
-  padding-top: 75px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
-}
-.cid-rsWkzdBXaz .mbr-text {
-  color: #767676;
-}
-.cid-rsWkzdBXaz h4 {
-  text-align: center;
-}
-.cid-rsWkzdBXaz p {
-  text-align: center;
-}
-.cid-rsWkzdBXaz .card-img span {
-  font-size: 96px;
-  color: #149dcc;
-}
 .cid-rshf6hnJbk {
   padding-top: 75px;
   padding-bottom: 0px;
@@ -1071,6 +1053,10 @@ section.lazy-placeholder:after {
   .cid-rshf6hnJbk .card:not(.last-child) {
     padding-bottom: 2rem;
   }
+}
+.cid-rshf6hnJbk .card-title {
+  color: #232323;
+  text-align: center;
 }
 .cid-rshgZldh5V {
   padding-top: 75px;
@@ -2923,24 +2909,6 @@ section.lazy-placeholder:after {
   .cid-rsWmNet9th .inner-container {
     width: 100% !important;
   }
-}
-.cid-rsWm4DbJuB {
-  padding-top: 15px;
-  padding-bottom: 30px;
-  background-color: #ffffff;
-}
-.cid-rsWm4DbJuB .mbr-text {
-  color: #767676;
-}
-.cid-rsWm4DbJuB h4 {
-  text-align: center;
-}
-.cid-rsWm4DbJuB p {
-  text-align: center;
-}
-.cid-rsWm4DbJuB .card-img span {
-  font-size: 96px;
-  color: #149dcc;
 }
 .cid-rt1wD6nwVU {
   padding-top: 15px;
