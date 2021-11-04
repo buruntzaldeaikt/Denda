@@ -1,0 +1,27 @@
+{
+  "settings": {
+    "path": "@PROJECT_PATH@",
+    "name": "Online Denda",
+    "screenshot": "screenshot.png",
+    "versionFirst": "5.4.1",
+    "siteFonts": [],
+    "theme": {},
+    "currentPage": "index.html",
+    "versionPublish": "5.4.1",
+    "imageResize": true,
+    "uniqCompNum": 0
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": []
+    }
+  }
+}
