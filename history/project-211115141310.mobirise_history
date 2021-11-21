@@ -624,6 +624,36 @@
           "_params": {}
         },
         {
+          "alias": "witsec-code-editor/components",
+          "_isSecondary": true,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "witsec-html-block",
+          "_sourceTheme": "mobirise4",
+          "_customHTML": "<section class=\"mbr-section mbr-section--no-padding\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n<mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n    <input type=\"image\" title=\"Background Image\" value=\"../_images/background.jpg\" parallax=\"\">\n    <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected=\"\">\n    <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n</mbr-parameters>\n\n<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n</div>\n\n<!-- Place your own code below -->\n<div id=\"smart-button-container\">\n      <div style=\"text-align: center;\">\n        <div id=\"paypal-button-container\"></div>\n      </div>\n    </div>\n  [JS_CODE_0]\n  [JS_CODE_1]\n<!-- Place your own code above -->\n\n</section>",
+          "_cid": "sOQ1v5f5dO",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "witsec-html-block-7b",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script src=\"https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR\" data-sdk-integration-source=\"button-factory\"></script>",
+            "<script>\n    function initPayPalButton() {\n      paypal.Buttons({\n        style: {\n          shape: 'rect',\n          color: 'black',\n          layout: 'vertical',\n          label: 'buynow',\n          \n        },\n\n        createOrder: function(data, actions) {\n          return actions.order.create({\n            purchase_units: [{\"description\":\"Taldeko poltsa ofiziala. Txankletak eta arropa hezeak gordetzeko konpartimentua dakar eta poltsikoa ere badu.\",\"amount\":{\"currency_code\":\"EUR\",\"value\":8}}]\n          });\n        },\n\n        onApprove: function(data, actions) {\n          return actions.order.capture().then(function(orderData) {\n            \n            // Full available details\n            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));\n\n            // Show a success message within this page, e.g.\n            const element = document.getElementById('paypal-button-container');\n            element.innerHTML = '';\n            element.innerHTML = '<h3>Thank you for your payment!</h3>';\n\n            // Or go to another URL:  actions.redirect('thank_you.html');\n            \n          });\n        },\n\n        onError: function(err) {\n          console.log(err);\n        }\n      }).render('#paypal-button-container');\n    }\n    initPayPalButton();\n  </script>"
+          ]
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",

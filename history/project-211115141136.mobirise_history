@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Online Denda",
-    "currentPage": "index.html",
+    "currentPage": "aukerak-oportunidades.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -47,7 +47,7 @@
         "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 264,
+    "uniqCompNum": 263,
     "versionPublish": "5.4.1",
     "screenshot": "screenshot.png",
     "favicon": false,
