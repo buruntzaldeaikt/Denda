@@ -370,7 +370,7 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
     </div>
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-6j" data-rv-view="101">
+<section class="mbr-section" id="witsec-modal-window-block-6j" data-rv-view="224">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -385,15 +385,35 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
 
 	
 	
-	<div><div class="modal fade" id="DS-Gizonezkoak-masculino" tabindex="-1" role="dialog" aria-labelledby="DS-Gizonezkoak-masculinoLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title" id="DS-Gizonezkoak-masculinoLabel">DS neurriak gizonezkoak - Medidas masculinas DS</h5>  <a href="#" class="no-anim close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body" id="DS-Gizonezkoak-masculino_body"><img src="https://1.bp.blogspot.com/-SMPhzptjyY0/X7z4sLHcihI/AAAAAAAA1cQ/iIMakEJx9iMg03VfaiVXBqocGYadS_PowCLcBGAsYHQ/s16000/Gizonezkoak%2BDS.jpg" width="300" height="300"></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-dismiss="modal">Itxi - Cerrar</a></div></div>    </div>  </div></div><script>document.addEventListener("DOMContentLoaded", function() {  $("#DS-Gizonezkoak-masculino").on("hidden.bs.modal", function () {    var html = $( "#DS-Gizonezkoak-masculino_body" ).html();    $( "#DS-Gizonezkoak-masculino_body" ).empty();    $( "#DS-Gizonezkoak-masculino_body" ).append(html);  })});</script></div>
+	<div><div class="modal fade" id="DS-Gizonezkoak-masculino" tabindex="-1" role="dialog" aria-labelledby="DS-Gizonezkoak-masculinoLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title" id="DS-Gizonezkoak-masculinoLabel">DS neurriak gizonezkoak - Medidas masculinas DS</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body" id="DS-Gizonezkoak-masculino_body"><img src="https://1.bp.blogspot.com/-SMPhzptjyY0/X7z4sLHcihI/AAAAAAAA1cQ/iIMakEJx9iMg03VfaiVXBqocGYadS_PowCLcBGAsYHQ/s16000/Gizonezkoak%2BDS.jpg" width="300" height="300"></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Itxi - Cerrar</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#DS-Gizonezkoak-masculino").on("hidden.bs.modal", function () { 
+      var html = $( "#DS-Gizonezkoak-masculino_body" ).html(); 
+      $( "#DS-Gizonezkoak-masculino_body" ).empty(); 
+      $( "#DS-Gizonezkoak-masculino_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#DS-Gizonezkoak-masculino") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
 
 	<script>
 	if (typeof OpenModal === 'undefined') {
 		OpenModal = function(modalName) {
-			if ($('#' + modalName).length)
-				$('#' + modalName).modal('show');
-			else
-				alert("Sorry, but there is no modal for " + modalName);
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
 		}
 	}
 
@@ -423,7 +443,7 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-6i" data-rv-view="102">
+<section class="mbr-section" id="witsec-modal-window-block-6i" data-rv-view="225">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -438,15 +458,35 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
 
 	
 	
-	<div><div class="modal fade" id="DS-emkumezkoak-femenino" tabindex="-1" role="dialog" aria-labelledby="DS-emkumezkoak-femeninoLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title" id="DS-emkumezkoak-femeninoLabel">DS emakumezkoen neurriak - Medidas femeninas DS</h5>  <a href="#" class="no-anim close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body" id="DS-emkumezkoak-femenino_body"><img src="https://1.bp.blogspot.com/-r1FExadjIhI/X7z4sSdNhwI/AAAAAAAA1cU/GvZ9lo_3rDMIfw9j3BjoGBJvqQ2aak70ACLcBGAsYHQ/s16000/Emakum%2BDS.jpg" width="300" height="300"></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-dismiss="modal">Itxi - Cerrar</a></div></div>    </div>  </div></div><script>document.addEventListener("DOMContentLoaded", function() {  $("#DS-emkumezkoak-femenino").on("hidden.bs.modal", function () {    var html = $( "#DS-emkumezkoak-femenino_body" ).html();    $( "#DS-emkumezkoak-femenino_body" ).empty();    $( "#DS-emkumezkoak-femenino_body" ).append(html);  })});</script></div>
+	<div><div class="modal fade" id="DS-emkumezkoak-femenino" tabindex="-1" role="dialog" aria-labelledby="DS-emkumezkoak-femeninoLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title" id="DS-emkumezkoak-femeninoLabel">DS emakumezkoen neurriak - Medidas femeninas DS</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body" id="DS-emkumezkoak-femenino_body"><img src="https://1.bp.blogspot.com/-r1FExadjIhI/X7z4sSdNhwI/AAAAAAAA1cU/GvZ9lo_3rDMIfw9j3BjoGBJvqQ2aak70ACLcBGAsYHQ/s16000/Emakum%2BDS.jpg" width="300" height="300"></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Itxi - Cerrar</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#DS-emkumezkoak-femenino").on("hidden.bs.modal", function () { 
+      var html = $( "#DS-emkumezkoak-femenino_body" ).html(); 
+      $( "#DS-emkumezkoak-femenino_body" ).empty(); 
+      $( "#DS-emkumezkoak-femenino_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#DS-emkumezkoak-femenino") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
 
 	<script>
 	if (typeof OpenModal === 'undefined') {
 		OpenModal = function(modalName) {
-			if ($('#' + modalName).length)
-				$('#' + modalName).modal('show');
-			else
-				alert("Sorry, but there is no modal for " + modalName);
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
 		}
 	}
 
@@ -476,7 +516,7 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-6g" data-rv-view="103">
+<section class="mbr-section" id="witsec-modal-window-block-6g" data-rv-view="226">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -491,15 +531,35 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
 
 	
 	
-	<div><div class="modal fade" id="Turbo-emakumezkoak-femenino" tabindex="-1" role="dialog" aria-labelledby="Turbo-emakumezkoak-femeninoLabel" aria-hidden="true">  <div class="modal-dialog modal-lg modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title" id="Turbo-emakumezkoak-femeninoLabel">Turbo emakumezkoen neurriak - Medidas Turbo femeninas</h5>  <a href="#" class="no-anim close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body" id="Turbo-emakumezkoak-femenino_body"><img src="https://1.bp.blogspot.com/-WBDDGO5vpRg/X7zwwEF7NyI/AAAAAAAA1b8/h2MQU0L22qoeOPZXXjxkZeoCWXgaESVgwCLcBGAsYHQ/s16000/WhatsApp%2BImage%2B2019-11-18%2Bat%2B12.00.34%2B%25281%2529.jpeg" width="700" height="300"></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-dismiss="modal">Itxi - Cerrar</a></div></div>    </div>  </div></div><script>document.addEventListener("DOMContentLoaded", function() {  $("#Turbo-emakumezkoak-femenino").on("hidden.bs.modal", function () {    var html = $( "#Turbo-emakumezkoak-femenino_body" ).html();    $( "#Turbo-emakumezkoak-femenino_body" ).empty();    $( "#Turbo-emakumezkoak-femenino_body" ).append(html);  })});</script></div>
+	<div><div class="modal fade" id="Turbo-emakumezkoak-femenino" tabindex="-1" role="dialog" aria-labelledby="Turbo-emakumezkoak-femeninoLabel" aria-hidden="true">  <div class="modal-dialog modal-lg modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title" id="Turbo-emakumezkoak-femeninoLabel">Turbo emakumezkoen neurriak - Medidas Turbo femeninas</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body" id="Turbo-emakumezkoak-femenino_body"><img src="https://1.bp.blogspot.com/-WBDDGO5vpRg/X7zwwEF7NyI/AAAAAAAA1b8/h2MQU0L22qoeOPZXXjxkZeoCWXgaESVgwCLcBGAsYHQ/s16000/WhatsApp%2BImage%2B2019-11-18%2Bat%2B12.00.34%2B%25281%2529.jpeg" width="700" height="300"></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Itxi - Cerrar</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#Turbo-emakumezkoak-femenino").on("hidden.bs.modal", function () { 
+      var html = $( "#Turbo-emakumezkoak-femenino_body" ).html(); 
+      $( "#Turbo-emakumezkoak-femenino_body" ).empty(); 
+      $( "#Turbo-emakumezkoak-femenino_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#Turbo-emakumezkoak-femenino") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
 
 	<script>
 	if (typeof OpenModal === 'undefined') {
 		OpenModal = function(modalName) {
-			if ($('#' + modalName).length)
-				$('#' + modalName).modal('show');
-			else
-				alert("Sorry, but there is no modal for " + modalName);
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
 		}
 	}
 
@@ -529,7 +589,7 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-6h" data-rv-view="104">
+<section class="mbr-section" id="witsec-modal-window-block-6h" data-rv-view="227">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -544,15 +604,35 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
 
 	
 	
-	<div><div class="modal fade" id="Turbo-gizonezkoak-masculino" tabindex="-1" role="dialog" aria-labelledby="Turbo-gizonezkoak-masculinoLabel" aria-hidden="true">  <div class="modal-dialog modal-lg modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title" id="Turbo-gizonezkoak-masculinoLabel">Turbo neurriak gizonezkoak - Medidas Turbo masculinas</h5>  <a href="#" class="no-anim close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body" id="Turbo-gizonezkoak-masculino_body"><img src="https://1.bp.blogspot.com/-siHZ4tY0bIU/X7zwwG2MFVI/AAAAAAAA1cA/bEhvW_nBDZgCyK8BRFmVPbWkJadv-UhggCLcBGAsYHQ/s16000/WhatsApp%2BImage%2B2019-11-18%2Bat%2B12.00.34.jpeg" width="700" height="300"></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-dismiss="modal">Itxi - Cerrar</a></div></div>    </div>  </div></div><script>document.addEventListener("DOMContentLoaded", function() {  $("#Turbo-gizonezkoak-masculino").on("hidden.bs.modal", function () {    var html = $( "#Turbo-gizonezkoak-masculino_body" ).html();    $( "#Turbo-gizonezkoak-masculino_body" ).empty();    $( "#Turbo-gizonezkoak-masculino_body" ).append(html);  })});</script></div>
+	<div><div class="modal fade" id="Turbo-gizonezkoak-masculino" tabindex="-1" role="dialog" aria-labelledby="Turbo-gizonezkoak-masculinoLabel" aria-hidden="true">  <div class="modal-dialog modal-lg modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title" id="Turbo-gizonezkoak-masculinoLabel">Turbo neurriak gizonezkoak - Medidas Turbo masculinas</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body" id="Turbo-gizonezkoak-masculino_body"><img src="https://1.bp.blogspot.com/-siHZ4tY0bIU/X7zwwG2MFVI/AAAAAAAA1cA/bEhvW_nBDZgCyK8BRFmVPbWkJadv-UhggCLcBGAsYHQ/s16000/WhatsApp%2BImage%2B2019-11-18%2Bat%2B12.00.34.jpeg" width="700" height="300"></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Itxi - Cerrar</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#Turbo-gizonezkoak-masculino").on("hidden.bs.modal", function () { 
+      var html = $( "#Turbo-gizonezkoak-masculino_body" ).html(); 
+      $( "#Turbo-gizonezkoak-masculino_body" ).empty(); 
+      $( "#Turbo-gizonezkoak-masculino_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#Turbo-gizonezkoak-masculino") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
 
 	<script>
 	if (typeof OpenModal === 'undefined') {
 		OpenModal = function(modalName) {
-			if ($('#' + modalName).length)
-				$('#' + modalName).modal('show');
-			else
-				alert("Sorry, but there is no modal for " + modalName);
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
 		}
 	}
 
@@ -754,14 +834,14 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
                 
             </div>
             <!--Card-1-->
-            <div class="card col-12 col-md-6 p-3 col-lg-4">
+            <div class="card col-12 col-md-6 p-3">
                 <div class="card-wrapper">
                     <div class="card-img">
                         <img src="assets/images/sudadera-ds-320x350.jpg" alt="" title="">
                     </div>
                     <div class="card-box">
                         <h4 class="card-title mbr-fonts-style display-5">
-                            KIROL JERTSEA DS<br>sudadera DS</h4>
+                            KIROL JERTSEA<br>sudadera</h4>
                         <p class="mbr-text mbr-fonts-style display-7">Lehiaketetan erabiltzeko taldeko sudadera ofiziala. Txanodun eta poltsikodun algodoizko sudadera.
 <br><br><em>Sudadera oficial del club para utilizar en competición. La sudadera de algodón tiene gorro y bolsillo central.</em><br><em><br></em></p>
                       <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -769,15 +849,22 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
 <input type="hidden" name="hosted_button_id" value="KHF8GHCFEPP66">
 <table>
 <tbody><tr><td><input type="hidden" name="on0" value="Neurriak | Tallas">Neurriak | Tallas</td></tr><tr><td><select name="os0">
-	<option value="XXL">XXL €25,00 EUR</option>
-	<option value="9-11">9-11 €25,00 EUR</option>
+	<option value="2XL-3XL-4XL">2XL-3XL-4XL €25,00 EUR</option>
+	<option value="XL">XL €25,00 EUR</option>
+	<option value="L">L €25,00 EUR</option>
+	<option value="M">M €25,00 EUR</option>
+	<option value="S">S €25,00 EUR</option>
+	<option value="XS">XS €25,00 EUR</option>
+	<option value="12-14">12-14 €25,00 EUR</option>
+	<option value="10-12">10-12 €25,00 EUR</option>
+	<option value="8-10">8-10 €25,00 EUR</option>
 	<option value="6-8">6-8 €25,00 EUR</option>
 </select> </td></tr>
 </tbody></table>
 <input type="hidden" name="currency_code" value="EUR">
 <input type="image" src="https://1.bp.blogspot.com/-zdsl528oiDo/XP1m98a2qbI/AAAAAAAAqLA/AChVBtFBCg0ZTHqOaT0Ww0OaVvkOY8RowCLcBGAs/s1600/Sin%2Bt%25C3%25ADtulo-1%2Bcopia.png" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
 <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
-</form>
+</form>  
   
                       <!--Btn-->
                         
@@ -785,52 +872,17 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
                 </div>
             </div>
             <!--Card-2-->
-            <div class="card col-12 col-md-6 p-3 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="assets/images/diseo-def-506x312.jpg" alt="" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-5">KIROL JERTSEA PENTEX<div>sudadera PENTEX</div></h4>
-                        <p class="mbr-text mbr-fonts-style display-7">Lehiaketetan erabiltzeko taldeko sudadera ofiziala. Txanodun eta poltsikodun algodoizko sudadera.
-<br>
-<br><em>Sudadera oficial del club para utilizar en competición. La sudadera de algodón tiene gorro y bolsillo central.</em><br><br></p>
-                      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="XZ2EZXELNVQRW">
-<table>
-<tbody><tr><td><input type="hidden" name="on0" value="Neurriak | Tallas">Neurriak | Tallas</td></tr><tr><td><select name="os0">
-	<option value="XL">XL €25,00 EUR</option>
-	<option value="L">L €25,00 EUR</option>
-	<option value="M">M €25,00 EUR</option>
-	<option value="S">S €25,00 EUR</option>
-	<option value="12">12 €25,00 EUR</option>
-	<option value="10">10 €25,00 EUR</option>
-	<option value="8">8 €25,00 EUR</option>
-	<option value="6">6 €25,00 EUR</option>
-</select> </td></tr>
-</tbody></table>
-<input type="hidden" name="currency_code" value="EUR">
-<br>
-<input type="image" src="https://1.bp.blogspot.com/-zdsl528oiDo/XP1m98a2qbI/AAAAAAAAqLA/AChVBtFBCg0ZTHqOaT0Ww0OaVvkOY8RowCLcBGAs/s1600/Sin%2Bt%25C3%25ADtulo-1%2Bcopia.png" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
-<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
-</form>
-                        <!--Btn-->
-                        
-                    </div>
-                </div>
-            </div>
-            <!--Card-3-->
-            <div class="card col-12 col-md-6 p-3 col-lg-4 last-child">
+            <div class="card col-12 col-md-6 p-3 last-child">
                 <div class="card-wrapper">
                     <div class="card-img">
                         <img src="assets/images/galtzak-ds-506x621.jpg" alt="" title="">
                     </div>
                     <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-5">
-                            KIROL GALTZAK<br>pantalón chandal</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">Lehiaketetan eabiltzeko taldeko galtza ofiziala. Ukabil erako goma txorkatilean. Poltsikodun algodoizko galtza.
-<br><br><em>Pantalón oficial del club para utilizar en competición. El  pantalón de algodón con bolsillos y goma de puño en el tobillo.</em><br><em><br></em></p>
+                        <h4 class="card-title mbr-fonts-style display-5">KIROL GALTZAK
+<div>pantalón chandal</div></h4>
+                        <p class="mbr-text mbr-fonts-style display-7">Lehiaketetan erabiltzeko taldeko galtza ofiziala. Ukabil erako goma txorkatilean. Poltsikodun algodoizko galtza.
+<br>
+<br>Pantalón oficial del club para utilizar en competición. El pantalón de algodón con bolsillos y goma de puño en el tobillo.<br><br></p>
                       <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="3UN67YP9DMJVN">
@@ -850,12 +902,14 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
                         <br>
 <input type="image" src="https://1.bp.blogspot.com/-zdsl528oiDo/XP1m98a2qbI/AAAAAAAAqLA/AChVBtFBCg0ZTHqOaT0Ww0OaVvkOY8RowCLcBGAs/s1600/Sin%2Bt%25C3%25ADtulo-1%2Bcopia.png" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
 <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
-</form>  
-                      <!--Btn-->
+</form> 
+                        <!--Btn-->
                         
                     </div>
                 </div>
             </div>
+            <!--Card-3-->
+            
             <!--Card-4-->
             
         </div>
@@ -1157,7 +1211,7 @@ Tienda para la compra de equipación del Club de Natación Buruntzaldea">
                 <p class="mbr-text"><strong>Beste guneak - Otros sitios</strong><br><a href="https://www.buruntzaldeaikt.eus/" class="text-white">Web Nagusia</a>&nbsp;| <a href="https://www.es.buruntzaldeaikt.eus/" class="text-white">Web Principal</a><br><a href="https://www.albisteak.buruntzaldeaikt.eus" class="text-white" target="_blank">Blog-a EUS</a>&nbsp;|&nbsp;<a href="https://noticiasbikt.buruntzaldeaikt.eus" class="text-white text-primary" target="_blank">Blog CAS</a><a href="https://www.lasartekosaria.buruntzaldeaikt.eus" class="text-white"><br></a><a href="https://www.lasartekosaria.buruntzaldeaikt.eus" class="text-white text-primary" target="_blank">Lasarteko Saria | Trofeo Lasarte</a><br><a href="https://dleht.buruntzaldeaikt.eus/" class="text-white" target="_blank">DLEHT</a> | <a href="https://cehld.buruntzaldeaikt.eus/" class="text-white" target="_blank">CEHLD</a><br><br><a href="https://www.buruntzaldeaikt.eus/dohaintzak.html" class="text-white" target="_blank">Dohaintzak</a> | <a href="https://www.es.buruntzaldeaikt.eus/donaciones.html" class="text-white" target="_blank">Donaciones</a><a href="https://cehld.buruntzaldeaikt.eus/" class="text-white" target="_blank"><br></a><a href="https://www.lasartekosaria.buruntzaldeaikt.eus" class="text-white text-primary" target="_blank"><br></a><br><strong>Aviso legal</strong><br><a href="Nota-Legal.html" class="text-white">Nota Legal y Política de Privacidad</a><br><a href="https://www.lasartekosaria.buruntzaldeaikt.eus" class="text-white"><br></a></p>
             </div>
             <div class="col-12 col-md-6">
-                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCNveGQ9bfpKFwWzQLLftrR9hNiHwdqQG8&amp;q=Buruntzaldea IKT" allowfullscreen=""></iframe></div>
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCt1265A4qvZy9HKUeA8J15AOC4SrCyZe4&amp;q=Buruntzaldea IKT" allowfullscreen=""></iframe></div>
             </div>
         </div>
         <div class="footer-lower">
